@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     border: none;
     margin: 0;
+    overflow: none;
 }
 
 .head {
@@ -200,19 +201,70 @@ header {
 
 .new-display {
     display: flex;
+    background-color: rgba(0, 2, 16, 0.231);
+    /* height: 500px; */
+    width: 1000px;
+    border-radius: 3%;
+    margin-top: 200px;
+    z-index: 999;
+    box-shadow: 0px 0px 30px 0px #e4dbff;
+    font-family: "Ubuntu", sans-serif;
 }
 
+
 .new-left-main {
-    background-color: red;
-    height: 100px;
-    width: 100px;
+    width: 550px;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+
+.social img {
+    height: 40px;
+    width: 40px;
+    margin: 2px 0;
+}
+
+.social div {
+    display: flex;
+    margin: 7px 0;
+}
+
+.social div a {
+    text-decoration: none;
+    padding-top: 7px;
+    color: white;
+    margin-left: 12px;
 }
 
 .new-right-main {
-    background-color: green;
-    height: 100px;
-    width: 100px;
+    width: 450px;
+    padding: 20px;
+    padding-left: 30px;
 }
+
+.images img {
+    height: 70px;
+    width: 100px;
+    margin-top: 10px;
+}
+.esummit {
+    padding-left: 38%;
+}
+.three {
+    display: flex;
+    padding-left: 7%;
+    padding-right: 7%;
+    justify-content: space-between;
+}
+/* .sih {
+    height: 40px;
+    width: 60px;
+} */
+.craftncode {
+    padding-left: 38%;
+}
+
 
 /* Ensure new-display is initially hidden */
 .new-display {

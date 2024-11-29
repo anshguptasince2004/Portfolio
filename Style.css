@@ -1,0 +1,278 @@
+body {
+    background: linear-gradient(90deg, rgb(1 0 29) 0%, rgb(19 0 72) 50%, rgb(43 3 71 / 97%) 100%);
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    margin: 0;
+}
+
+.head {
+    border: 0;
+    height: 2px;
+    background-color: rgba(203, 151, 20, 0.557);
+    margin: 0 70px;
+    position: relative;
+    z-index: 999;
+    /* margin-top: 20px; */
+}
+
+
+/* Animation keyframes */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Initially hidden */
+.hidden {
+    opacity: 0;
+}
+
+/* Apply animation */
+.header-animate {
+    animation: slideInFromTop 1.5s ease forwards;
+}
+
+.left-main-animate {
+    animation: slideInFromLeft 1.7s ease forwards;
+}
+
+.right-main-animate {
+    animation: slideInFromRight 1.7s ease forwards;
+}
+
+
+
+header {
+    height: 2.6rem;
+    display: flex;
+    padding-bottom: 23px;
+    padding-top: 7px;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(44, 18, 66, 0.336) 0%, rgb(16 16 78 / 49%) 91%);
+    box-shadow: 0px 1px 33px 12px rgb(0 0 46);
+}
+
+.h1 {
+    font-size: 30px;
+    margin-left: 7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.right {
+    display: flex;
+    /* background-color: red; */
+    padding: 5px;
+    justify-content: space-between;
+    margin-left: 21rem;
+    margin-top: 18px;
+    gap: 7.9rem;
+    font-size: 18px;
+    font-weight: bold;
+    /* font-family: sans-serif; */
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+}
+
+.right a:hover {
+    color: rgb(153, 0, 255);
+    transition: all 0.1s;
+    font-size: 19px;
+    transform: translateY(-2px);
+
+}
+
+.initial {
+    margin: 100px 140px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.typed-js {
+    color: blueviolet;
+    font-weight: 400;
+}
+
+.left-main {
+    padding: 69px 4px;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+.right-main img {
+    margin-top: 20px;
+    height: 313px;
+    width: 313px;
+    border-radius: 10%;
+    border: 1px solid rgb(111, 0, 255);
+    margin-right: 20px;
+    box-shadow: 0px 0px 136px -2px rgb(255 128 0 / 43%);
+}
+
+.floating-image {
+    display: block;
+    margin: auto;
+    width: 300px;
+    /* Adjust as needed */
+    height: auto;
+    animation: float 3.5s ease-in-out infinite;
+    transition: filter 0.3s ease;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating-image:hover {
+    filter: brightness(1.07);
+}
+
+.btn-explore {
+    height: 45px;
+    width: 120px;
+    margin-left: 30%;
+    margin-top: 79px;
+    background-color: rgb(23, 23, 108);
+    border-radius: 4%;
+    font-size: 25px;
+    color: white;
+    border: 2px solid #cac9e4
+}
+
+.btn-explore:hover {
+    cursor: pointer;
+}
+
+
+
+.new-display {
+    display: flex;
+}
+
+.new-left-main {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.new-right-main {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+
+/* Ensure new-display is initially hidden */
+.new-display {
+    display: none; /* Initially hidden */
+    opacity: 0; /* Start with zero opacity */
+     transition: opacity 1.5s ease; /*Smooth transition for opacity */
+    position: absolute; /* Position it absolutely to center it */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) scale(0.5); /* Adjust for centering */
+}
+
+/* Class to handle fading out */
+.fade-out-left {
+    animation: fadeOutLeft 1.5s forwards;
+}
+
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%); /* Move left */
+    }
+}
+
+.fade-out-right {
+    animation: fadeOutRight 1.5s forwards;
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%); /* Move right */
+    }
+}
+
+/* Class to apply the fade-in effect */
+.fade-in {
+    display: flex; /* Make it visible */
+    /* opacity: 1; Set opacity to 1 for fade-in */
+    /* transition: opacity 1.5s ease;  */
+    animation: fadeInZoom 1.5s forwards;
+}
+
+@keyframes fadeInZoom {
+    from {
+        opacity: 0; /* Start fully transparent */
+        filter: blur(10px); /* Start blurred */
+        transform: translate(-50%, -50%) scale(0.5); /* Start zoomed out */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        filter: blur(0); /* End not blurred */
+        transform: translate(-50%, -50%) scale(1); /* End at normal size */
+    }
+}

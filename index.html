@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh's Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+<body>
+    <header>
+        <span class="h1"><a href="index.html">Ansh's Portfolio</a></span>
+        <div class="right">
+            <a href="index.html">
+                <div class="home">Home</div>
+            </a>
+            <a href="*">
+                <div class="home">About</div>
+            </a>
+            <a href="*">
+                <div class="home">Contact Me</div>
+            </a>
+            <a href="*">
+                <div class="home"></div>
+            </a>
+        </div>
+    </header>
+    <hr class="head">
+
+    <main>
+        <div class="main">
+            <div class="initial">
+                <div class="left-main">
+                    Hi, My name is <span class="purple">Ansh Gupta</span> <br>and I am an aspiring <br>
+                    <div class="typed-js">
+                        <!-- Element to contain animated typing -->
+                        <span id="element"></span>
+
+                        <!-- Load library from the CDN -->
+                        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                        <!-- Setup and start animation! -->
+                        <script>
+                            var typed = new Typed('#element', {
+                                strings: ['Web Developer!', 'Web Designer!'], // Strings to type out
+                                typeSpeed: 70, // Speed of typing
+                                backSpeed: 50, // Speed of backspacing
+                                backDelay: 1000, // Delay before erasing starts
+                                loop: true, // Loop the typing animation
+                                showCursor: true, // Show the cursor
+                                cursorChar: '|', // Cursor character
+                            });
+                        </script>
+                    </div>
+                    <button class="btn-explore">Explore!</button>
+                </div>
+
+                <div class="right-main">
+                    <img src="images\lnkdin.jpeg" alt="Image-Ansh Gupta" class="floating-image">
+                </div>
+            </div>
+            <div class="new-display">
+                <div class="new-left-main">
+
+                </div>
+                <div class="new-right-main">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

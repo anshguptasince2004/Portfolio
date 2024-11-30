@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
     border: none;
     margin: 0;
-    overflow: none;
+    overflow-x: hidden;
 }
 
 .head {
@@ -213,10 +213,19 @@ header {
 
 
 .new-left-main {
-    width: 550px;
+    width: 50%;
     padding: 20px;
     padding-left: 30px;
 }
+.new-right-main {
+    width: 50%;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+/* .left-main, .right-main {
+    overflow: hidden; /* Prevent any overflow from these sections 
+}*/
 
 
 .social img {
@@ -235,12 +244,6 @@ header {
     padding-top: 7px;
     color: white;
     margin-left: 12px;
-}
-
-.new-right-main {
-    width: 450px;
-    padding: 20px;
-    padding-left: 30px;
 }
 
 .images img {
@@ -270,11 +273,15 @@ header {
 .new-display {
     display: none; /* Initially hidden */
     opacity: 0; /* Start with zero opacity */
-     transition: opacity 1.5s ease; /*Smooth transition for opacity */
+    transition: opacity 1.5s ease; /* Smooth transition for opacity */
     position: absolute; /* Position it absolutely to center it */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%) scale(0.5); /* Adjust for centering */
+    margin-bottom: 20px;
+    width: calc(100% - 40px); /* Adjust width to fit within the viewport */
+    max-width: 1000px; /* Set a maximum width */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 /* Class to handle fading out */
@@ -328,3 +335,4 @@ header {
         transform: translate(-50%, -50%) scale(1); /* End at normal size */
     }
 }
+

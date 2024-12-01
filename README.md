@@ -6,7 +6,7 @@
 <p>This portfolio is a work in progress as I continue to improve and add more features, including a section to showcase my projects.</p>
 
 <h2>🌐 Deployed Link</h2>
-<p>Take a look: <a href="portfolio-ansh-gupta.netlify.app">Ansh's Portfolio</a></p>
+<p>Take a look: <a href="https://portfolio-ansh-gupta.netlify.app/">Ansh's Portfolio</a></p>
 
 <h2>🛠️ Built With</h2>
 <ul>
